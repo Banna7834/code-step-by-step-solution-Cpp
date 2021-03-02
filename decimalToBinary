@@ -1,0 +1,9 @@
+int decimalToBinary(int x){
+	int binary=0,i=0;
+	if(!x)return 0;
+	while(x!=0){
+		binary=binary+((x%2)*pow(10,i++));
+		x=x/2;
+	}
+	return binary;
+}
