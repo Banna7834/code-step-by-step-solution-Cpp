@@ -1,0 +1,17 @@
+bool sorted(double a[], int l){
+    if(l==1)return true;
+    if(l==2)return false;
+    if(a[0]>a[1]){
+    for(int i=1;i<l-1;++i){
+        if(a[i]<a[i+1])return false;
+        }
+        return true;
+    }
+    else{
+        for(int i=1;i<l-1;++i){
+        if(a[i]>a[i+1])return false;
+        }
+        return true;
+    }
+    return true;
+}
