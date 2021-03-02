@@ -1,0 +1,12 @@
+void numberSquare(int min, int max){
+	int count=0;
+	for (int i=min; i<=max;i++){
+		++count;
+		int x=0;
+		for(int j=i;j<max+count;j++){
+			if(j<=max)cout<<j;
+			else cout<<min+(x++);
+		}
+		cout<<"\n";
+	}
+}
