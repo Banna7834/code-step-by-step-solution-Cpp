@@ -1,0 +1,12 @@
+void fibonacci(int max){
+    int first=0;
+    int second=1;
+    int next=0;
+    cout<<"Fibonacci sequence up to "<<max<<":\n";
+    while(first<max){
+        cout<<first<<"\n";
+        next=first+second;
+        first=second;
+        second=next;
+    }
+}
