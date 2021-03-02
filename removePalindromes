@@ -1,0 +1,10 @@
+void removePalindromes(string a[], int l){
+    for(int i=0;i<l;++i){
+        string temp=a[i];
+        string temp1=a[i];
+        reverse(temp.begin(),temp.end());
+        transform(temp.begin(),temp.end(),temp.begin(),::tolower);
+        transform(temp1.begin(),temp1.end(),temp1.begin(),::tolower);
+        if(temp==temp1)a[i]="";
+    }
+}
