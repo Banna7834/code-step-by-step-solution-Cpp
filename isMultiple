@@ -1,0 +1,5 @@
+bool isMultiple(long a,long b){
+    double x=(double)a/b;
+    if(x==(int)x)return true;
+    return false;
+}
