@@ -1,0 +1,23 @@
+void fitnessGoal(int goal){
+    cout<<"Train until you increase for "<<goal<<" days.\n";
+    int count=0;
+    int count2=0;
+    int min=0;
+    int last_min=0;
+    while(count!=goal){
+        cout<<"Minutes? ";
+        cin>>min;
+        if(last_min<min){
+            cout<<"Great job!\n";
+            ++count;
+            ++count2;
+        }
+        else{
+            cout<<"Start over.\n";
+            count=0;
+            ++count2;
+        }
+        last_min=min;
+    }
+    cout<<"Reached your goal in "<<count2<<" total days!\n";
+}
