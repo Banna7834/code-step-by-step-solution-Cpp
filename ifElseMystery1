@@ -1,0 +1,9 @@
+
+mystery(8);	
+8 6
+mystery(-3);	
+-3 4
+mystery(1);	
+1 3
+mystery(0);	
+0 0
