@@ -1,0 +1,12 @@
+int main(){
+    int n=0;
+    cout<<"Type an integer: ";
+    cin>>n;
+    int sum=0;
+    while(n!=0){
+        sum=sum+(n%10);
+        n=n/10;
+    }
+    cout<<"Digit sum is "<<sum;
+    return 0;
+}
