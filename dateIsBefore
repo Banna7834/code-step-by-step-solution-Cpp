@@ -1,0 +1,8 @@
+bool dateIsBefore(int x1, int x2, int x3, int x4){
+	if(x1>x3)return false;
+    if(x1==x3){
+		if(x2<x4)return true;
+		return false;
+		}
+	return true;
+}
