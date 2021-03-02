@@ -1,0 +1,9 @@
+int findRange(int a[], int l){
+    int small=a[0];
+    int large=a[0];
+    for(int i=0;i<l;++i){
+        if(a[i]<small)small=a[i];
+        if(a[i]>large)large=a[i];
+    }
+    return large-small+1;
+}
