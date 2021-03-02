@@ -1,0 +1,7 @@
+double computeAverage(int ar[], int l){
+    double sum=0;
+    for(int i=0;i<l;++i){
+        sum=sum+double(ar[i]);
+    }
+    return sum/l;
+}
