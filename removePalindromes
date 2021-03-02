@@ -8,3 +8,33 @@ void removePalindromes(string a[], int l){
         if(temp==temp1)a[i]="";
     }
 }
+
+#updated 
+void removePalindromes(string a[], int l){
+	for(int i=0;i<l;++i){
+		bool palindrome=false;
+		string word=a[i];
+		int size=word.size();
+		for(int j=0;j<size;++j){
+			palindrome=false;
+			if(word[j]==word[size-j-1]){
+				palindrome=true;
+				continue;
+			}
+			if(word[j]==word[size-j-1]+32){
+				palindrome=true;
+				continue;
+			}
+			if(word[j]==word[size-j-1]-32){
+				palindrome=true;
+				continue;
+			}
+			if(!palindrome){
+				break;
+			}
+		}
+		if(palindrome){
+			a[i]="";
+		}
+	}
+}
