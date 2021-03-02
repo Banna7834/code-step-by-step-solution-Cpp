@@ -1,0 +1,22 @@
+double computeTax(double salary){
+	double tax=0;
+	double flat_amount=0;
+	double plus=0;
+	if(salary>=0 && salary<=7150){
+		flat_amount=0;
+		plus=(salary-0)*(float)10/100;
+	}
+	else if(salary>7150 && salary<=29050){
+		flat_amount=715;
+		plus=(salary-7150)*(float)15/100;
+	}
+	else if(salary>29050 && salary<=70350){
+		flat_amount=4000;
+		plus=(salary-29050)*(float)25/100;
+	}
+	else if(salary>70350){
+		flat_amount=14325;
+		plus=(salary-70350)*(float)28/100;
+	}
+	return flat_amount+plus;
+}
