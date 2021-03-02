@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int number=0;
+	int n=0;
+	int large=0;
+	int small=0;
+	cout<<"Number of numbers? ";
+	cin>>number;
+	int i=1;
+	cout<<"Number "<<i<<": ";
+	cin>>n;
+	large=n;
+	small=n;
+	while(i++ != number){
+		cout<<"Number "<<i<<": ";
+		cin>>n;
+		if(n>large){
+			large=n;
+		}
+		if(n<small){
+			small=n;
+		}
+	}
+	cout<<"Biggest = "<<large<<"\n";
+	cout<<"Smallest = "<<small<<"\n";
+	return 0;
+}
