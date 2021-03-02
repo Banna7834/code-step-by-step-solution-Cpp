@@ -1,0 +1,12 @@
+void showTwos(int x){
+    cout<<x<<" = ";
+    int last=x;
+    double y=(double)x/2;
+    if(y==(int)y)last=y;
+    while(y==(int)y){
+        y=y/2;
+        if(y==(int)y)last=y;
+        cout<<"2 * ";
+    }
+    cout<<last;
+}
