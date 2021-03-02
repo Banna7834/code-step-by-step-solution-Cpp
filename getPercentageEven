@@ -1,0 +1,8 @@
+double getPercentEven(int a[], int l){
+    int count=0;
+    for(int i=0;i<l;++i){
+        if(a[i]%2==0)++count;
+    }
+    if(count==0)return 0.0;
+    return ((double)count/(double)l)*100;
+}
