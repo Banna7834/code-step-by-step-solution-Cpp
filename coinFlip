@@ -1,0 +1,21 @@
+void coinFlip(int k, char ch){
+    if(k<0){
+        cout<<"ERROR!\n";
+        return;
+    }
+    if(ch!='H' && ch!='T'){
+        cout<<"ERROR!\n";
+        return;
+    }
+
+    int count=0;
+    char ar[2]={'H','T'};
+    char ch2=' ';
+    while(count!=k){
+        ch2=ar[(rand()%2)];
+        cout<<ch2<<" ";
+        if(ch2==ch)count++;
+        else count=0;
+    }
+    cout<<"\nYou got "<<ch<<" "<<k<<" times in a row!\n";
+}
