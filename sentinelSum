@@ -1,0 +1,14 @@
+int main(){
+    int n=0;
+    cout<<"Type a number: ";
+    cin>>n;
+    int sum=0;
+    while(n!=-1){
+        sum=sum+n;
+        cout<<"Type a number: ";
+        cin>>n;
+        
+    }
+    cout<<"Sum is "<<sum;
+    return 0;
+}
