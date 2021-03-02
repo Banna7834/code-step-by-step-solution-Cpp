@@ -1,0 +1,54 @@
+#include<iostream>
+using namespace std;
+float BMI()
+{
+    float h=0,w=0,bmi=0;
+    cout<<"height (in inches)? ";
+    cin>>h;
+    cout<<"weight (in pounds)? ";
+    cin>>w;
+    bmi=(w*703)/(h*h);
+    return bmi;
+}
+
+int stage(float p)
+{
+    int x=0;
+    if (p>=30)
+    {
+        x=4;
+    }
+    else if(p>=25)
+    {
+        x=3;
+    }
+    else if(p>=18.5)
+    {
+        x=2;
+    }
+    else{x=1;}
+    return x;
+}
+
+
+int main()
+{
+    float p1=0,p2=0;
+    int s=0;
+	cout<<"This program reads data for two people\nand computes their body mass index (BMI).\n";
+    cout<<"\nEnter Person 1's information:\n";
+    p1=BMI();
+    s=stage(p1);
+    cout<<"BMI = "<<p1<<", class "<<s<<"\n";
+    cout<<"\n";
+    cout<<"Enter Person 2's information:\n";
+    p2=BMI();
+    s=stage(p2);
+    cout<<"BMI = "<<p2<<", class "<<s<<endl<<endl;
+    if(p1>p2)
+    {
+        cout<<"BMI difference = "<<p1-p2;
+    }
+    else{cout<<"BMI difference = "<<p2-p1;}
+    return 0;
+}
