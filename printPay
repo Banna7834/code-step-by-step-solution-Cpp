@@ -1,0 +1,9 @@
+void printPay(double salary, double hour){
+    cout<<"Hours worked: "<<hour<<"\n";
+    cout<<"Pay earned: $";
+    if(hour<=8){
+        cout<<fixed<<setprecision(2)<<salary*hour;
+        return;
+    }
+    cout<<fixed<<setprecision(2)<<(8*salary)+((hour-8)*(salary*1.5));
+}
